@@ -1,4 +1,4 @@
-# 🌐 Mohd Umar — Full Stack Developer Portfolio
+# 🌐 Mohd Azam — Full Stack Developer Portfolio
 
 <div align="center">
 
@@ -220,14 +220,14 @@ Full API docs available at `/api/docs` (Swagger UI)
 
 ## 👨‍💻 Author
 
-**Mohd Umar**
-- 🌐 Portfolio: [mohdumar.online](https://mohdumar.online)
-- 💼 LinkedIn: [mohd-umar-mern-stack-developer](https://www.linkedin.com/in/mohd-umar-mern-stack-developer/)
-- 🐙 GitHub: [mohdumar-mern](https://github.com/mohdumar-mern)
-- 📧 Email: uk1941404@gmail.com
+**Mohd Azam**
+- 🌐 Portfolio: [mohd-azam]()
+- 💼 LinkedIn: [mohd-azam-full-stack-developer](https://www.linkedin.com/in/mohd-azam-full-stack-developer/)
+- 🐙 GitHub: [mohd-azam-111](https://GitHub.com/mohdazam-111)
+- 📧 Email: shaikhazam9696@gmial.com
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Mohd Umar</sub>
+  <sub>Built with ❤️ by Mohd Azam</sub>
 </div>
