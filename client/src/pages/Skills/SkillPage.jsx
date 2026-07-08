@@ -18,6 +18,7 @@ const SkillPage = () => {
     }
   }, [dispatch]);
 
+  console.log("Skills data:", skills);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -84,7 +85,7 @@ const SkillPage = () => {
     <SkillCard
       title={skill.title}
       level={skill.level}
-      imageUrl={skill?.file?.url}
+      imageUrl={skill?.imageUrl}
       category={skill.category}
     />
   </motion.div>

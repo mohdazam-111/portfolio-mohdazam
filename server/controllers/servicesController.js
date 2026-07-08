@@ -6,24 +6,16 @@ import { delCache, getCache, setCache } from "../utils/cache.js";
 // @route  POST /api/services/add
 // @access Public
 export const addService = expressAsyncHandler(async (req, res) => {
-  const { title, description, category, status = "active" } = req.body;
+  const { title, description, category, imageUrl, status = "active" } = req.body;
 
-  if (!req.file) {
-    return res
-      .status(400)
-      .json({ success: false, error: "No service image uploaded" });
-  }
-
-  const fileUrl = req.file.path || req.file.url;
-  const public_id = req.file.public_id || req.file.filename || null;
+ 
 
   const service = new Service({
     title,
     description,
     category,
     status,
-    file: { url: fileUrl, public_id },
-  });
+    imageUrl,  });
 
   const savedService = await service.save();
   if (!savedService)

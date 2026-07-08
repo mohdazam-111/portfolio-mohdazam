@@ -16,7 +16,7 @@ const AddService = () => {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
-    file: "",
+    imageUrl: "",
     category: "Frontend",
     status: "active",
   });
@@ -29,37 +29,30 @@ const AddService = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData((prev) => ({ ...prev, file: e.target.files[0] }));
+    setFormData((prev) => ({ ...prev, imageUrl: e.target.value   }));
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const data = new FormData();
-    data.append("title", formData.title);
-    data.append("description", formData.description);
-    data.append("file", formData.file);
-    data.append("category", formData.category);
-    data.append("status", formData.status);
-
-    dispatch(addService(data))
-      .unwrap()
-      .then(() => navigate("/dashboard/services"))
-      .catch((err) => {
-        console.error("Failed to add service:", err);
-      });
+  const data = {
+    title: formData.title,
+    description: formData.description,
+    imageUrl: formData.imageUrl,
+    category: formData.category,
+    status: formData.status,
   };
+
+  dispatch(addService(data))
+    .unwrap()
+    .then(() => navigate("/dashboard/services"))
+    .catch((err) => {
+      console.error("Failed to add service:", err);
+    });
+};
 
   return (
     <>
-      <Helmet>
-        <title>Add Service | Admin Dashboard</title>
-        <meta
-          name="description"
-          content="Add a new service to the dashboard. Upload image, set category and status."
-        />
-      </Helmet>
-
       <div className="max-w-md mx-auto font-mono">
         <button
           onClick={() => navigate("/dashboard/services")}
@@ -119,10 +112,11 @@ const AddService = () => {
 
           <Input
             label="Service_Image"
-            type="file"
-            name="file"
-            onChange={handleFileChange}
-            accept="image/*"
+            type="text"
+            name="imageUrl"
+            value={formData.imageUrl}
+            onChange={handleChange}
+            placeholder="Enter image URL"
             required
             icon={Image}
           />

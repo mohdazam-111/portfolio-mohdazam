@@ -7,6 +7,7 @@ import { getCache, setCache, delCache } from "../utils/cache.js";
 // @route  POST /api/projects
 // @access Public or Protected
 export const addProject = expressAsyncHandler(async (req, res) => {
+  console.log("Request body:", req.body); // Log the request body for debugging
   const { title, description, techStack, liveDemo, githubLink, imageUrl } =
     req.body;
   // console.log("Body data",req.body)

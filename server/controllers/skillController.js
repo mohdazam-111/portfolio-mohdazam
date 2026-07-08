@@ -6,25 +6,19 @@ import { delCache, getCache, setCache } from "../utils/cache.js";
 // @route  POST /api/skills/add
 // @access Public
 export const addSkill = expressAsyncHandler(async (req, res) => {
-  const { title, level, category } = req.body;
+  console.log("Request body:", req.body); // Log the request body for debugging
+  const { title, level, category, imageUrl } = req.body;
 
-  if (!req.file) {
-    return res
-      .status(400)
-      .json({ success: false, error: "No skill image uploaded" });
-  }
-
-  const fileUrl = req.file.path || req.file.url;
-  const public_id = req.file.public_id || req.file.filename || null;
 
   const skill = new Skill({
     title,
     level,
     category,
-    file: { url: fileUrl, public_id },
+    imageUrl,
   });
 
   const savedSkill = await skill.save();
+  console.log("Saved skill:", savedSkill); // Log the saved skill for debugging
   if (!savedSkill)
     return res.status(500).json({ message: "Failed to save skill" });
 

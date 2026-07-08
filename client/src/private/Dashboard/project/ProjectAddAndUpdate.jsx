@@ -67,23 +67,25 @@ const ProjectAddUpdate = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const form = new FormData();
-    Object.entries(formData).forEach(([key, value]) => {
-      form.append(key, value);
-    });
+  e.preventDefault();
 
-    try {
-      if (isEditing) {
-        await dispatch(updateProject({ id, data: form })).unwrap();
-      } else {
-        await dispatch(addProject(form)).unwrap();
-      }
-      setTimeout(() => navigate("/dashboard/projects"), 1000);
-    } catch (err) {
-      console.error("Failed to submit project:", err);
+  try {
+    if (isEditing) {
+      await dispatch(
+        updateProject({
+          id,
+          data: formData,
+        })
+      ).unwrap();
+    } else {
+      await dispatch(addProject(formData)).unwrap();
     }
-  };
+
+    navigate("/dashboard/projects");
+  } catch (err) {
+    console.error(err);
+  }
+};
 
   const renderInput = (props) => <Input {...props} />;
 

@@ -102,7 +102,7 @@ const ServicesPage = () => {
                   <ServiceCard
                     title={service.title}
                     category={service.category}
-                    imageUrl={service?.file?.url}
+                    imageUrl={service?.imageUrl}
                     description={service.description}
                   />
                 </motion.div>

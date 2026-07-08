@@ -11,9 +11,8 @@ const skillSchema = new mongoose.Schema(
       enum: ["Beginner", "Intermediate", "Advanced"],
       default: "Beginner",
     },
-    file: {
-      url: String,
-      public_id: String,
+    imageUrl: {
+      type: String,
     },
     category: {
       type: String,

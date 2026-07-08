@@ -4,7 +4,7 @@ const serviceSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },
     description: { type: String, required: true },
-    file: { url: String, public_id: String },
+    imageUrl: { type: String },
     category: { type: String },
     status: { type: String, default: "active" },
   },

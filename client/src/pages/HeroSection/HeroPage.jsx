@@ -10,61 +10,7 @@ import SocialLinksComponents from "../../components/Sociallinks/SocialLinksCompo
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <link rel="canonical" href="https://mohdumar.online" />
-        <title>Mohd Umar | MERN Stack Developer in India</title>
-        <meta
-          name="description"
-          content="Mohd Umar is a MERN Stack Developer from India specializing in React, Node.js, MongoDB, Express, Redux Toolkit, Docker, and Redis."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <meta property="og:title" content="Mohd Umar | MERN Stack Developer Portfolio" />
-        <meta
-          property="og:description"
-          content="Full-stack developer from Noida, India specializing in MERN stack apps."
-        />
-        <meta property="og:image" content="https://mohdumar.online/banner.webp" />
-        <meta property="og:url" content="https://mohdumar.online" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mohd Umar | MERN Stack Developer Portfolio" />
-        <meta
-          name="twitter:description"
-          content="Explore the portfolio of Mohd Umar, a React and Node.js developer from Noida."
-        />
-        <meta name="twitter:image" content="https://mohdumar.online/banner.webp" />
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Mohd Umar",
-            url: "https://mohdumar.online",
-            jobTitle: "MERN Stack Developer",
-            description:
-              "MERN Stack Developer specializing in React.js, Node.js, Express.js and MongoDB",
-            sameAs: [
-              "https://github.com/mohdumar-mern",
-              "https://linkedin.com/in/mohd-umar-mern-stack-developer",
-            ],
-            knowsAbout: [
-              "React.js",
-              "Node.js",
-              "Express.js",
-              "GitHub",
-              "CI/CD",
-              "MongoDB",
-              "Redux Toolkit",
-              "Docker",
-              "Redis",
-              "JavaScript",
-            ],
-          })}
-        </script>
-      </Helmet>
+     
 
       {/* Manual CSS animations — no framer-motion dependency on this page */}
       <style>{`
@@ -95,16 +41,6 @@ const Home = () => {
           {/* 🔸 Right: Content */}
           <div className="flex items-center justify-center order-1 lg:order-2 font-mono">
             <aside className="space-y-6 max-w-xl">
-              {/* Eyebrow */}
-              <div
-                className="flex items-center gap-2 text-pink-500 text-xs uppercase tracking-widest fade-slide-up"
-                style={{ animationDelay: "0s" }}
-              >
-                <span className="h-[2px] w-12 bg-gradient-to-l from-pink-500 to-transparent" />
-                <span>Initializing Portfolio</span>
-                <span className="h-[2px] w-12 bg-gradient-to-r from-pink-500 to-transparent" />
-              </div>
-
               {/* Heading */}
               <h1
                 className="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-tight text-white fade-slide-up"
@@ -112,7 +48,7 @@ const Home = () => {
               >
                 HI, I'M{" "}
                 <span className="text-cyan-400 drop-shadow-[0_0_18px_rgba(34,211,238,0.6)]">
-                  MOHD UMAR
+                  MOHD AZAM
                 </span>
               </h1>
 
@@ -128,7 +64,7 @@ const Home = () => {
                 style={{ animationDelay: "0.3s" }}
               >
                 <span className="text-cyan-400">&gt;</span> Full Stack Developer |
-                Python Developer
+                MERN Developer
               </h2>
 
               {/* Description */}
@@ -136,21 +72,7 @@ const Home = () => {
                 className="text-gray-400 text-sm md:text-base leading-relaxed fade-slide-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                Full Stack Developer with 1+ year of hands-on experience,
-                currently working as{" "}
-                <span className="text-cyan-400 font-bold">
-                  Associate ERP Developer
-                </span>{" "}
-                at{" "}
-                <span className="text-cyan-400 font-bold">
-                  A.Paul Software Systems
-                </span>{" "}
-                in Delhi. I specialize in MERN stack with expertise in Docker,
-                Redis, WebSockets, and MySQL. I've built production
-                applications including an EMS system with RBAC and rate
-                limiting, a real-time secret chat app using Socket.io and
-                Redis, and a YouTube clone. I'm looking for full-time or
-                remote full stack opportunities to grow my career.
+               MERN Stack Developer with hands-on experience building full-stack web applications using React.js, Node.js, Express.js, and MongoDB. Skilled in developing REST APIs, implementing JWT authentication, and creating responsive user interfaces. Passionate about writing clean, scalable code and continuously improving my technical skills.
               </p>
 
               {/* Social links */}

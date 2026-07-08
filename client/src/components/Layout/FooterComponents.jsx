@@ -59,7 +59,7 @@ const FooterComponents = () => {
 
       {/* Copyright */}
       <div className="text-center text-xs uppercase tracking-widest text-gray-500">
-        © {new Date().getFullYear()} M<span className="text-cyan-400">.</span>Umar — All rights reserved
+        © {new Date().getFullYear()} MOHD<span className="text-cyan-400"> </span>AZAM — All rights reserved
       </div>
     </footer>
   );

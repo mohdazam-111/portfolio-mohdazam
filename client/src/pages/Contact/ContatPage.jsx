@@ -21,11 +21,11 @@ const initialFormState = {
 };
 
 const contactDetails = [
-  { icon: Mail, label: "uk1941404@gmail.com", href: "mailto:uk1941404@gmail.com" },
-  { icon: Phone, label: "+91 96287 87975", href: "tel:9628787975" },
-  { icon: Linkedin, label: "linkedin.com/in/mohdumar-mern", href: "https://www.linkedin.com/in/mohd-umar-mern-stack-developer/" },
-  { icon: Github, label: "github.com/mohdumar-mern", href: "https://github.com/mohdumar-mern" },
-  { icon: MapPin, label: "Noida, Uttar Pradesh, India", href: null },
+  { icon: Mail, label: "shaikhazam9696@gmail.com", href: "mailto:shaikhazam9696@gmail.com" },
+  { icon: Phone, label: "+91 9696197809", href: "tel:9696197809" },
+  { icon: Linkedin, label: "mohd-azam-full-stack-developer", href: "https://www.linkedin.com/in/mohd-azam-full-stack-developer/" },
+  { icon: Github, label: "github.com/mohdazam-111", href: "https://GitHub.com/mohdazam-111" },
+  { icon: MapPin, label: "Okhla, New Delhi, India", href: null },
 ];
 
 const ContactPage = () => {

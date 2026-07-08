@@ -6,44 +6,13 @@ import AvatarCard from "../../components/UI/card/AvatarCard";
 
 const AboutPage = () => {
   const skills = useMemo(
-    () => ["JavaScript", "React", "Node.js", "Git", "NPM", "Express", "MongoDB", "Docker", "Redis"],
+    () => ["JavaScript", "React", "Node.js", "Git", "NPM", "Express", "MongoDB"],
     []
   );
 
   return (
     <>
-      <Helmet>
-        <title>About | Mohd Umar - MERN Stack Developer</title>
-        <meta
-          name="description"
-          content="Learn more about Mohd Umar, a MERN Stack Developer from Noida, skilled in JavaScript, React, Node.js, Express, and MongoDB."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Mohd Umar",
-              "url": "https://umarportfolio-frontend.vercel.app/about",
-              "jobTitle": "MERN Stack Developer",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
-              },
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Noida",
-                "addressRegion": "Uttar Pradesh",
-                "addressCountry": "India"
-              },
-              "knowsAbout": ["React", "Node.js", "MongoDB", "JavaScript", "Express"]
-            }
-          `}
-        </script>
-      </Helmet>
+      
 
       {/* Manual CSS animations — no framer-motion dependency on this page */}
       <style>{`
@@ -105,19 +74,17 @@ const AboutPage = () => {
                 className="text-gray-400 text-sm md:text-base leading-relaxed fade-slide-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                Hi, I'm Mohd Umar, a MERN Stack Developer from Noida, Uttar
-                Pradesh, India. I enjoy building full-stack web applications
-                that are fast, responsive, and user-friendly.
+               I'm Mohd Azam, a MERN Stack Developer based in Okhla, New Delhi, India. I build responsive, scalable, and user-friendly web applications using React.js, Node.js, Express.js, and MongoDB. I'm passionate about creating real-world solutions and continuously improving my development skills.
               </p>
 
-              <p
+              {/* <p
                 className="text-gray-400 text-sm md:text-base leading-relaxed fade-slide-up"
                 style={{ animationDelay: "0.5s" }}
               >
                 I connect front-end and back-end seamlessly using RESTful APIs,
                 manage state efficiently with Redux, and focus on secure,
                 scalable, and responsive web apps.
-              </p>
+              </p> */}
 
               {/* Skills */}
               <div>

@@ -9,8 +9,8 @@ export const navItems = [
   { label: "Projects", path: "/projects" },
   { label: "Skills", path: "/skills" },
   { label: "Services", path: "/services" },
-  { label: "Blog", path: "/blog" },        // ← yeh add karo
   { label: "Contact Us", path: "/contact-us" },
+  { label: "Login", path: "/login" },
 ];
 
 const HeaderComponents = () => {
@@ -28,7 +28,7 @@ const HeaderComponents = () => {
             to="/"
             className="text-white text-xl font-bold tracking-widest uppercase"
           >
-            M<span className="text-cyan-400">.</span>UMAR
+            MOHD<span className="text-cyan-400"> </span>AZAM
           </NavLink>
 
           {/* Desktop Nav */}
@@ -52,13 +52,13 @@ const HeaderComponents = () => {
                 ))}
             </ul>
 
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-cyan-400 pl-6 border-l border-cyan-500/20">
+            {/* <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-cyan-400 pl-6 border-l border-cyan-500/20">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
               </span>
               Available_for_hire
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile Nav Toggle */}

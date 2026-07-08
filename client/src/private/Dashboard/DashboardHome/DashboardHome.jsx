@@ -34,15 +34,7 @@ const DashboardHome = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Dashboard | Mohd Umar</title>
-        <meta
-          name="description"
-          content="Admin dashboard overview page for Mohd Umar's portfolio."
-        />
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
-
+      
       <section className="p-6 sm:p-8 border border-cyan-500/15 bg-gradient-to-b from-cyan-950/10 to-black space-y-8 font-mono">
         {/* Eyebrow */}
         <div className="flex items-center gap-2 text-pink-500 text-xs uppercase tracking-widest">
@@ -57,7 +49,7 @@ const DashboardHome = () => {
             <h1 className="text-2xl font-extrabold uppercase tracking-tight text-white">
               Welcome back,{" "}
               <span className="text-cyan-400 drop-shadow-[0_0_14px_rgba(34,211,238,0.5)]">
-                Umar
+                Azam
               </span>
             </h1>
             <div className="h-[2px] w-20 bg-gradient-to-r from-cyan-400 to-transparent mt-2" />

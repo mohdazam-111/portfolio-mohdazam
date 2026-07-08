@@ -18,7 +18,7 @@ const AddAndUpdateSkill = () => {
     title: "",
     level: "Beginner",
     category: "Frontend",
-    file: null,
+    imageUrl: "",
   });
 
   useEffect(() => {
@@ -39,19 +39,18 @@ const AddAndUpdateSkill = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData((prev) => ({ ...prev, file: e.target.files[0] }));
+    setFormData((prev) => ({ ...prev, imageUrl: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formPayload = new FormData();
-    formPayload.append("title", formData.title);
-    formPayload.append("level", formData.level);
-    formPayload.append("category", formData.category);
-    if (formData.file) {
-      formPayload.append("file", formData.file);
-    }
+    const formPayload = {
+      title: formData.title,
+      level: formData.level,
+      category: formData.category,
+      imageUrl: formData.imageUrl,
+    };    
 
     try {
       await dispatch(addSkill(formPayload)).unwrap();
@@ -124,10 +123,11 @@ const AddAndUpdateSkill = () => {
 
         <Input
           label="Skill_Image"
-          type="file"
-          name="file"
-          onChange={handleFileChange}
-          accept="image/*"
+          type="text"
+          name="imageUrl"
+          value={formData.imageUrl}
+          onChange={handleChange}
+          placeholder="Enter image URL"
           icon={Image}
           required={!isEditing}
         />
