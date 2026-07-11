@@ -49,7 +49,7 @@ const ProjectPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Projects | Mohd Umar - MERN Stack Developer</title>
         <meta
           name="description"
@@ -84,7 +84,7 @@ const ProjectPage = () => {
             })}
           </script>
         )}
-      </Helmet>
+      </Helmet> */}
 
       <Container>
         <main className="w-full">

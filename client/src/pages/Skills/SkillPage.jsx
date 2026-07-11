@@ -98,7 +98,7 @@ const SkillPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Skills | Mohd Umar - MERN Stack Developer</title>
         <meta
           name="description"
@@ -119,7 +119,7 @@ const SkillPage = () => {
             })}
           </script>
         )}
-      </Helmet>
+      </Helmet> */}
 
       <Container>
         <main className="w-full">

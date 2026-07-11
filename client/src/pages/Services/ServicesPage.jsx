@@ -36,7 +36,7 @@ const ServicesPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Services | Mohd Umar - MERN Stack Developer</title>
         <meta
           name="description"
@@ -44,7 +44,7 @@ const ServicesPage = () => {
         />
         <meta name="robots" content="index, follow" />
         <html lang="en" />
-      </Helmet>
+      </Helmet> */}
 
       <Container>
         <main className="w-full">

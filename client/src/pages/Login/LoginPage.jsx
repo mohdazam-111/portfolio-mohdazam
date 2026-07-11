@@ -61,7 +61,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Login | Mohd Umar - Admin Access</title>
         <meta
           name="description"
@@ -69,7 +69,7 @@ const LoginPage = () => {
         />
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://umarportfolio-frontend.vercel.app/login" />
-      </Helmet>
+      </Helmet> */}
 
       <Container>
         <section className="min-h-[80vh] w-full max-w-md mx-auto flex items-center justify-center font-mono">

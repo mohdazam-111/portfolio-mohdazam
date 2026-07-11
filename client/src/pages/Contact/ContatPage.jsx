@@ -82,7 +82,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Contact | Mohd Umar - MERN Stack Developer</title>
         <meta
           name="description"
@@ -96,7 +96,7 @@ const ContactPage = () => {
           content="Reach out to Mohd Umar via email or phone. Available for freelance MERN Stack development work."
         />
         <meta property="og:type" content="website" />
-      </Helmet>
+      </Helmet> */}
 
       {/* Manual CSS animations — no framer-motion dependency on this page */}
       <style>{`
