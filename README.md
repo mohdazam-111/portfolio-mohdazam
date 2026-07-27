@@ -153,8 +153,8 @@ deploy-client         deploy-server
 ### Clone & Install
 
 ```bash
-git clone https://github.com/mohdumar-mern/mohdumar.git
-cd mohdumar
+git clone https://github.com/mohdazam-111/portfolio-mohdazam.git
+cd portfolio-mohdazam
 
 # Install client dependencies
 cd client && npm install
