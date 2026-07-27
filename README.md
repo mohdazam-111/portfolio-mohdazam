@@ -14,8 +14,7 @@
 
 A **production-grade full-stack portfolio** built with the MERN stack, featuring a cyberpunk/neon-noir aesthetic, complete CI/CD pipeline, automated testing, and PM2 process management.
 
-> Live at → **[mohdumar.online](https://mohdumar.online)**
-
+> Live at → **[portfolio-mohdazam.vercel.app](https://portfolio-mohdazam.vercel.app/)**
 ---
 
 ## ⚙️ Tech Stack
